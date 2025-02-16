@@ -1,16 +1,16 @@
-{{ "<!-- navigation -->" | safeHTML }}
-<header class="navigation">
-  <header>
-    <h1><a href="{{ .Site.BaseURL }}">EverWise</a></h1>
-    <div class="menu-icon" onclick="toggleMenu()">☰</div>
-    <nav id="dropdown-menu">
-        <ul>
-            <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-            <li><a href="/scam-alerts/">Scam Alerts</a></li>
-            <li><a href="/security-tips/">Security Tips</a></li>
-            <li><a href="/product-reviews/">Product Reviews</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
+<header>
+    <div class="container d-flex justify-content-between align-items-center">
+        <h1><a href="{{ .Site.BaseURL }}">EverWise</a></h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav id="dropdown-menu">
+            <ul>
+                <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+                <li><a href="/scam-alerts/">Scam Alerts</a></li>
+                <li><a href="/security-tips/">Security Tips</a></li>
+                <li><a href="/product-reviews/">Product Reviews</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
-{{ "<!-- /navigation -->" | safeHTML }}
